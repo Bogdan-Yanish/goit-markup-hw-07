@@ -1,0 +1,70 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity $animation;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+
+    width: 528px;
+    min-height: 581px;
+
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $animation, opacity $animation;
+
+    border-radius: 4px;
+
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(1.2);
+            opacity: 0;
+        }
+}
+
+.popup__button-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill $animation;
+
+    background-color: $white-color;
+    background-size: contain;
+
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+

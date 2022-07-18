@@ -1,0 +1,50 @@
+.clients__title {
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $icon-color;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: border-color $animation;
+
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+    transition: fill $animation;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $accent-color;
+    }
+}
+
