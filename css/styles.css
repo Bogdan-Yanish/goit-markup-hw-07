@@ -1007,7 +1007,7 @@ transition: border-color var(--animation);
   height: 50px;
   padding: 0;
 
-  background-color: #188CE8;
+  background-color: var(--accent-color);
   color:var(--white-color);
   
   font-weight: 700;

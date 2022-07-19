@@ -8,6 +8,10 @@
     margin-top: 50px;
 }
 
+.clients__item {
+    flex-basis: calc((100% - 30px * (6 - 1)) / 6);
+}
+
 .clients__link {
     display: flex;
     align-items: center;

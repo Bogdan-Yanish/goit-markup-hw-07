@@ -2,10 +2,7 @@
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
-}
-
-.option__item:not(:last-child) {
-    margin-right: 8px;
+    gap: 8px;
 }
 
 .option__button {

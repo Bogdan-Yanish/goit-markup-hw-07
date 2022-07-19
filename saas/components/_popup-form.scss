@@ -1,13 +1,6 @@
 .popup-form__title {
-    margin-bottom: 12px;
-
-    color: $title-text-color;
-
-    font-weight: 700;
+    @extend %title;
     font-size: 20px;
-    letter-spacing: 0.03em;
-    line-height: 1.17;
-    text-align: center;
 }
 
 .popup-form {
