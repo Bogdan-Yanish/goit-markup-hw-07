@@ -3,19 +3,12 @@
 }
 
 .team__title {
-    margin-bottom: 50px;
-
-    color: $title-text-color;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @extend %title;    
 }
 
 .team__list {
     display: flex;
+    margin-top: 50px;
 }
 
 .team__item {

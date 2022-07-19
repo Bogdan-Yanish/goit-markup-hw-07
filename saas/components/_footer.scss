@@ -80,12 +80,16 @@
     color: $white-color;
 }
 
+.subscribe__form {
+    display: flex;
+    gap: 12px;
+}
 .subscribe__input {
     width: 358px;
     padding-left: 16px;
     padding-top: 14px;
     padding-bottom: 14px;
-
+    
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
 
@@ -108,29 +112,6 @@
     
         color: inherit
     }
-}
-
-.subscribe__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 200px;
-    padding: 10px 2px;
-    margin-left: 12px;
-
-    color: $white-color;
-    background-color: $accent-color;
-
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-
-    cursor: pointer;
 }
 
 .subscribe__icon {

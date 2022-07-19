@@ -6,7 +6,12 @@
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
+    line-height: 1.17;
     text-align: center;
+}
+
+.popup-form {
+    margin-top: 12px;
 }
 
 .popup-form__field {
@@ -61,7 +66,6 @@
     .popup-form__input:focus+& {
         fill: $accent-color;
     }
-
 }
 
 .popup-form__feedback {
@@ -104,16 +108,7 @@
 }
 
 .agree__checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @extend %visually-hidden;
 }
 
 .agree__icon--box {
@@ -147,23 +142,3 @@
     color: $accent-color;
 }
 
-.popup-form__button-send {
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 50px;
-    padding: 0;
-
-    background-color:$accent-color;
-    color: $white-color;
-
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: transparent;
-
-    cursor: pointer;
-}

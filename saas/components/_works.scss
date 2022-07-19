@@ -3,20 +3,13 @@
 }
 
 .work__title {
-    margin-bottom: 50px;
-
-    color: $title-text-color;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @extend %title;
 }
 
 .work__list {
     display: flex;
     gap: 30px;
+    margin-top: 50px;
 }
 
 .work__item {
